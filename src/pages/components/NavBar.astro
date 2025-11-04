@@ -1,0 +1,107 @@
+<!-- NAVBAR – Les Massages de Laurent -->
+<nav class="fixed w-full bg-[#fffaf4]/70 backdrop-blur-md shadow-md z-50 border-b border-[#b48a60]/30">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      
+      <!-- Logo + Titre -->
+      <div class="flex items-center space-x-3">
+        <img 
+          src="/public/logo.png" 
+          alt="Les Massages de Laurent Logo" 
+          class="h-12 w-12 rounded-full border border-[#b48a60]/50 shadow-md"
+        >
+        <span class="text-xl font-bold text-[#8b6b4f] tracking-wide">
+          Les Massages de Laurent
+        </span>
+      </div>
+  
+      <!-- Liens Desktop -->
+      <div id="menu" class="flex align-items-center ">
+<div class="hidden md:flex space-x-8 mr-8 align-items-center">
+
+    
+    
+    <a href="#accueil" class="text-[#4b3b2a] hover:text-[#b48a60] transition">Accueil</a>
+    <a href="#philosophie" class="text-[#4b3b2a] hover:text-[#b48a60] transition">Philosophie</a>
+    <a href="#soins" class="text-[#4b3b2a] hover:text-[#b48a60] transition">Soins</a>
+    <a href="#contact" class="text-[#4b3b2a] hover:text-[#b48a60] transition">Contact</a>
+</div>
+        <button id="open-menu" class="text-[#8b6b4f] text-3xl hover:scale-110 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"/></svg>
+          </button>
+    </div>
+
+  
+  
+    </div>
+  </nav>
+  
+  <!-- MENU OVERLAY MOBILE -->
+  <div id="menu-overlay" class="hidden fixed inset-0 bg-[#f5eee4]/95 backdrop-blur-md flex flex-col items-center justify-center space-y-6 z-50 opacity-0 transition-opacity duration-500">
+    <button id="close-menu" class="absolute top-6 right-6 text-[#8b6b4f] text-4xl hover:scale-110 transition">
+      ✕
+    </button>
+
+   <!-- LOGO + TITRE -->
+<div class="flex items-center space-x-3 group">
+    <div class="relative">
+      <img 
+        src="/logo.png" 
+        alt="Logo Les Massages de Laurent" 
+        class="h-12 w-12 rounded-full border border-[#b48a60]/50 shadow-md transition-transform duration-300 group-hover:scale-110 group-hover:shadow-lg"
+      >
+      <!-- Halo doré doux -->
+      <span class="absolute inset-0 rounded-full bg-[#c3a76b]/30 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+    </div>
+    <span class="text-2xl font-semibold tracking-wide text-[#8b6b4f] transition-colors duration-300 group-hover:text-[#b48a60] font-['Cormorant_Garamond']">
+      Les Massages de Laurent
+    </span>
+  </div>
+  
+  <!-- LIENS DE NAVIGATION -->
+  <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 mt-8 md:mt-0">
+    <a href="#accueil" class="block relative text-xl text-[#4b3b2a] font-medium hover:text-[#b48a60] transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:bottom-0 after:bg-[#b48a60] hover:after:w-full after:transition-all after:duration-300">
+      Accueil
+    </a>
+    <a href="#philosophie" class="block relative text-xl text-[#4b3b2a] font-medium hover:text-[#b48a60] transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:bottom-0 after:bg-[#b48a60] hover:after:w-full after:transition-all after:duration-300">
+      Philosophie
+    </a>
+    <a href="#soins" class="relative block text-xl text-[#4b3b2a] font-medium hover:text-[#b48a60] transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:bottom-0 after:bg-[#b48a60] hover:after:w-full after:transition-all after:duration-300">
+      Soins
+    </a>
+    <a href="#contact" class="relative block text-xl text-[#4b3b2a] font-medium hover:text-[#b48a60] transition duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:bottom-0 after:bg-[#b48a60] hover:after:w-full after:transition-all after:duration-300">
+      Contact
+    </a>
+  </div>
+  
+  
+  <!-- SCRIPT -->
+  <script>
+    const openBtn = document.getElementById('open-menu');
+    const closeBtn = document.getElementById('close-menu');
+    const overlay = document.getElementById('menu-overlay');
+    const links = document.querySelectorAll('.overlay-link');
+  
+    openBtn.addEventListener('click', () => {
+      overlay.classList.remove('hidden');
+      setTimeout(() => overlay.classList.add('opacity-100'), 10);
+  
+      // Animation d’apparition progressive
+      links.forEach((link, i) => {
+        setTimeout(() => {
+          link.classList.remove('opacity-0', 'translate-y-6');
+        }, 150 * i);
+      });
+    });
+  
+    closeBtn.addEventListener('click', () => {
+      overlay.classList.remove('opacity-100');
+      links.forEach(link => link.classList.add('opacity-0', 'translate-y-6'));
+      setTimeout(() => overlay.classList.add('hidden'), 500);
+    });
+  
+    // Ferme aussi le menu quand on clique sur un lien
+    links.forEach(link => link.addEventListener('click', () => {
+      closeBtn.click();
+    }));
+  </script>
+  
