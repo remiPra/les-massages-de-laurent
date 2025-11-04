@@ -1,0 +1,301 @@
+---                           
+import '../styles/global.css'  
+--- 
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les massages de Laurent – Massages de bienveillance et de reconnexion à Toulouse</title>
+  <meta name="description" content="Les massages de Laurent, espace de massages conscients et bienveillants à Toulouse. Laurent, ancien kinésithérapeute, propose des massages suédois, drainages lymphatiques et soins californiens pour réconcilier le corps et l’âme.">
+  <link rel="canonical" href="https://www.les-massages-de-laurent.fr">
+  <meta name="keywords" content="massage Toulouse, massage bien-être, massage suédois, drainage lymphatique, massage californien, toucher conscient, haptonomie, détente, relaxation, Toulouse massage">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap');
+    body { 
+      font-family: 'Montserrat', sans-serif; 
+      background: linear-gradient(to bottom right, #fffefc, #f5f0e6);
+      color: #333; 
+    }
+    h1, h2, h3, h4, span { font-family: 'Cormorant Garamond', serif; }
+    .text-gradient { background: linear-gradient(90deg, #b48a60, #8b6b4f, #c3a76b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .gradient-btn { background: linear-gradient(135deg, #b48a60, #8b6b4f); }
+    .gradient-btn:hover { background: linear-gradient(135deg, #c3a76b, #b48a60); }
+    .card-hover { transition: all 0.4s ease; }
+    .card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <img src="logo.png" alt="Les massages de Laurent Logo" class="h-12 w-12 rounded-full shadow-md">
+        <span class="text-xl font-bold text-gradient">Les massages de Laurent</span>
+      </div>
+      <button id="menu-toggle" class="md:hidden text-3xl text-[#8b6b4f] focus:outline-none">
+        ☰
+      </button>
+      <div id="menu" class="hidden md:flex space-x-8 flex-col md:flex-row absolute md:static top-[70px] left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none md:items-center text-center">
+        <a href="#accueil" class="py-3 md:py-0 hover:text-[#b48a60] block">Accueil</a>
+        <a href="#philosophie" class="py-3 md:py-0 hover:text-[#b48a60] block">Philosophie</a>
+        <a href="#soins" class="py-3 md:py-0 hover:text-[#b48a60] block">Soins</a>
+        <a href="#contact" class="py-3 md:py-0 hover:text-[#b48a60] block">Contact</a>
+        <button id="menu-toggle" class="hidden md:flex text-3xl text-[#8b6b4f] focus:outline-none">
+        ☰
+      </button>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    toggle.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+
+  <!-- HERO -->
+  <section id="accueil" class="pt-24 md:pt-40 pb-20 px-6 text-center bg-gradient-to-br from-[#fff8f2] via-white to-[#f4efe9]">
+    <div class="max-w-3xl mx-auto" data-aos="fade-up">
+      <h1 class="text-5xl md:text-6xl font-bold mb-6 text-gradient">
+        Les massages de Laurent – Massages de bienveillance à Toulouse
+      </h1>
+      <figure class="flew w-full justify-center">
+          <img src="logoheader.png" alt="Massage bienveillant à Toulouse" 
+
+          class="w-40 border-2 border-[#8b6b4f]  mx-auto rounded-full shadow-lg mb-6">
+        </figure>
+      <p class="text-xl text-gray-700 mb-6  leading-relaxed">
+        Un <strong>toucher accueillant et attentif</strong>, suivi d’un massage en conscience,  
+        peut aider à se réconcilier avec son corps et son âme — un retour au bien-être  
+        « en et avec soi ».
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#soins" class="gradient-btn text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition">
+          Découvrir les soins
+        </a>
+        <a href="#contact" class="border border-[#b48a60] text-[#8b6b4f] px-8 py-4 rounded-full font-semibold hover:bg-[#b48a60]/10 transition">
+          Prendre rendez-vous
+        </a>
+      </div>
+    </div>
+  </section>
+
+ <!-- PHILOSOPHIE -->
+<section id="philosophie" class="py-24 px-6 bg-[#f9f4ef]">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Image portrait -->
+    <div class="flex justify-center md:justify-end" data-aos="fade-up">
+      <img 
+        src="portrait.png" 
+        alt="Laurent – Les massages de Laurent Toulouse" 
+        class="rounded-[2rem] w-[340px] shadow-lg border border-[#e9e2d9]/70"
+        loading="lazy"
+      >
+    </div>
+
+    <!-- Texte philosophie -->
+    <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+      <h2 class="text-5xl font-bold text-[#8b6b4f] mb-6 text-center ">Philosophie</h2>
+       <figure class="flew w-full justify-center">
+          <img src="logoying.png" alt="Massage bienveillant à Toulouse" 
+
+          class="w-20 border-2 border-[#8b6b4f]  mx-auto rounded-full shadow-lg mb-6">
+        </figure>
+      <p class="text-lg text-gray-700 leading-relaxed mb-8">
+        <em>“Par la porte du corps, atteindre l’âme.”</em><br><br>
+        Chaque massage est un acte de bienveillance et de conscience.  
+        Je crois que le bien en moi peut éveiller le bien en l’autre,  
+        et que le toucher est une passerelle silencieuse entre le cœur et le corps.
+      </p>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        Après 33 ans de pratique comme kinésithérapeute, je continue ma mission de bien-être,  
+        aujourd’hui en tant que <strong>masseur dédié à la présence et à la conscience</strong>.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- SOINS -->
+<!-- SOINS -->
+<section id="soins" class="py-24 px-6 bg-[#e8dccf]">
+  <div class="text-center mb-16" data-aos="fade-up">
+    <h2 class="text-5xl font-bold text-[#8b6b4f] mb-4">Mes Soins</h2>
+    <figure class="flex w-full justify-center">
+      <img src="buddha.png" alt="Massage bienveillant à Toulouse" 
+        class="w-28 border-2 border-[#8b6b4f] mx-auto rounded-full shadow-lg mb-6">
+    </figure>
+    <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+      Chaque soin est une rencontre avec soi-même : détente, rééquilibrage et paix intérieure.
+    </p>
+  </div>
+  
+  <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+
+    <!-- Massage Suédois -->
+    <div class="bg-white/90 rounded-3xl p-10 shadow-md card-hover" data-aos="fade-up">
+      <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-3 italic">Massage Suédois de Relaxation</h3>
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        Massage profond et tonique favorisant la détente musculaire et la circulation.
+      </p>
+      <p class="font-semibold text-[#8b6b4f] mb-8">35 € / 30 min – 59 € / 60 min</p>
+      <div class="flex flex-col md:flex-row justify-center gap-4">
+        <a href="#contact" class="w-full md:w-auto text-center px-6 py-3 rounded-full text-white font-semibold shadow-md transition hover:scale-105" style="background: linear-gradient(135deg, #b48a60, #8b6b4f);">
+          Prendre rendez-vous
+        </a>
+        <a href="#" class="w-full md:w-auto text-center px-6 py-3 rounded-full border border-[#8b6b4f] text-[#8b6b4f] font-semibold transition hover:bg-[#8b6b4f]/10">
+          En savoir plus
+        </a>
+      </div>
+    </div>
+
+    <!-- Drainage -->
+    <div class="bg-white/90 rounded-3xl p-10 shadow-md card-hover" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-3 italic">Drainage Lymphatique Manuel</h3>
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        Soin doux et précis pour stimuler le système lymphatique et alléger le corps.
+      </p>
+      <p class="font-semibold text-[#8b6b4f] mb-8">45 € / 50 min</p>
+      <div class="flex flex-col md:flex-row justify-center gap-4">
+        <a href="#contact" class="w-full md:w-auto text-center px-6 py-3 rounded-full text-white font-semibold shadow-md transition hover:scale-105" style="background: linear-gradient(135deg, #b48a60, #8b6b4f);">
+          Prendre rendez-vous
+        </a>
+        <a href="#" class="w-full md:w-auto text-center px-6 py-3 rounded-full border border-[#8b6b4f] text-[#8b6b4f] font-semibold transition hover:bg-[#8b6b4f]/10">
+          En savoir plus
+        </a>
+      </div>
+    </div>
+
+    <!-- Californien -->
+    <div class="bg-white/90 rounded-3xl p-10 shadow-md card-hover" data-aos="fade-up">
+      <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-3 italic">Massage Californien Kinesthésique</h3>
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        Soin global, enveloppant et intuitif, reliant le corps, le souffle et l’âme.
+      </p>
+      <p class="font-semibold text-[#8b6b4f] mb-8">80 € / 90 min</p>
+      <div class="flex flex-col md:flex-row justify-center gap-4">
+        <a href="#contact" class="w-full md:w-auto text-center px-6 py-3 rounded-full text-white font-semibold shadow-md transition hover:scale-105" style="background: linear-gradient(135deg, #b48a60, #8b6b4f);">
+          Prendre rendez-vous
+        </a>
+        <a href="#" class="w-full md:w-auto text-center px-6 py-3 rounded-full border border-[#8b6b4f] text-[#8b6b4f] font-semibold transition hover:bg-[#8b6b4f]/10">
+          En savoir plus
+        </a>
+      </div>
+    </div>
+
+    <!-- Personnalisé -->
+    <div class="bg-white/90 rounded-3xl p-10 shadow-md card-hover" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-3 italic">Massages Personnalisés</h3>
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        Soin adapté à vos besoins physiques et émotionnels du moment, pour un équilibre complet.
+      </p>
+      <p class="font-semibold text-[#8b6b4f] mb-8">35 € / 30 min – 59 € / 60 min</p>
+      <div class="flex flex-col md:flex-row justify-center gap-4">
+        <a href="#contact" class="w-full md:w-auto text-center px-6 py-3 rounded-full text-white font-semibold shadow-md transition hover:scale-105" style="background: linear-gradient(135deg, #b48a60, #8b6b4f);">
+          Prendre rendez-vous
+        </a>
+        <a href="#" class="w-full md:w-auto text-center px-6 py-3 rounded-full border border-[#8b6b4f] text-[#8b6b4f] font-semibold transition hover:bg-[#8b6b4f]/10">
+          En savoir plus
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="text-center text-gray-600 mt-16 italic max-w-2xl mx-auto">
+    Pour profiter pleinement des bienfaits du soin, prévoyez 20 à 30 minutes supplémentaires dans votre planning.  
+    (non incluses dans la prestation)
+  </p>
+</section>
+
+
+  <!-- CONTACT -->
+<section id="contact" class="py-24 px-6 bg-[#f0e7de]">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-4xl font-bold text-[#8b6b4f] mb-6">Contact & Rendez-vous</h2>
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+        Mon cabinet, entièrement rénové et décoré, est prêt à vous recevoir dans les meilleures conditions,  
+        dans une atmosphère paisible et lumineuse.
+      </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto bg-white p-10 rounded-3xl shadow-xl" data-aos="fade-up">
+      <form class="space-y-6">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-gray-700 mb-2 font-semibold">Prénom</label>
+            <input type="text" class="w-full border border-gray-300 px-4 py-3 rounded-lg focus:ring-2 focus:ring-[#b48a60]" placeholder="Votre prénom">
+          </div>
+          <div>
+            <label class="block text-gray-700 mb-2 font-semibold">Nom</label>
+            <input type="text" class="w-full border border-gray-300 px-4 py-3 rounded-lg focus:ring-2 focus:ring-[#b48a60]" placeholder="Votre nom">
+          </div>
+        </div>
+        <div>
+          <label class="block text-gray-700 mb-2 font-semibold">Email</label>
+          <input type="email" class="w-full border border-gray-300 px-4 py-3 rounded-lg focus:ring-2 focus:ring-[#b48a60]" placeholder="votre@email.com">
+        </div>
+        <div>
+          <label class="block text-gray-700 mb-2 font-semibold">Message</label>
+          <textarea rows="5" class="w-full border border-gray-300 px-4 py-3 rounded-lg focus:ring-2 focus:ring-[#b48a60]" placeholder="Expliquez votre besoin..."></textarea>
+        </div>
+        <button class="w-full gradient-btn text-white py-4 rounded-full font-semibold text-lg hover:shadow-lg transition transform hover:scale-105">
+          Envoyer la demande
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#8b6b4f] text-white py-12 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-2xl font-bold mb-3 text-gradient">Les massages de Laurent</h3>
+        <p class="text-[#f4ede5] leading-relaxed">Massages de bienveillance, de relaxation et de reconnexion à Toulouse.</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold mb-3">Navigation</h4>
+        <ul class="space-y-2 text-[#f4ede5]">
+          <li><a href="#accueil" class="hover:text-white">Accueil</a></li>
+          <li><a href="#philosophie" class="hover:text-white">Philosophie</a></li>
+          <li><a href="#soins" class="hover:text-white">Soins</a></li>
+          <li><a href="#contact" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold mb-3">Localisation</h4>
+        <p>Cabinet Les massages de Laurent<br>Toulouse, France</p>
+      </div>
+    </div>
+    <div class="border-t border-[#a6896c] mt-8 pt-6 text-center text-[#e8ddd2] text-sm">
+      &copy; 2025 Les massages de Laurent | Laurent – Massages Bienveillants à Toulouse  
+      <br><a href="#" class="hover:text-white">Mentions légales</a> – <a href="#" class="hover:text-white">Politique de confidentialité</a>
+    </div>
+  </footer>
+
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Les massages de Laurent – Laurent",
+    "image": "https://www.toucher-originel.fr/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Toulouse",
+      "addressCountry": "FR"
+    },
+    "telephone": "+33 6 00 00 00 00",
+    "priceRange": "€€",
+    "description": "Les massages de Laurent à Toulouse – massages de bienveillance, drainage lymphatique, massage californien et soins du corps et de l’âme par Laurent.",
+    "url": "https://www.toucher-originel.fr"
+  }
+  </script>
+</body>
+</html>
