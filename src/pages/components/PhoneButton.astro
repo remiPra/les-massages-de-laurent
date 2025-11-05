@@ -1,0 +1,23 @@
+---
+const phone = "+33660224080"; // 👉 Numéro de Laurent
+const telLink = `tel:${phone}`;
+---
+
+<a 
+  href={telLink}
+  aria-label="Appeler Laurent"
+  class="fixed bottom-20 right-6 z-50 group"  <!-- décalé un peu au-dessus du WhatsApp -->
+>
+  <div class="relative flex items-center justify-center p-4 rounded-full shadow-lg 
+              bg-gradient-to-br from-[#b48a60] to-[#8b6b4f] 
+              hover:from-[#c3a76b] hover:to-[#b48a60]
+              transition-all duration-300 transform hover:scale-110">
+    <!-- Icône téléphone -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" class="w-7 h-7 drop-shadow-sm">
+      <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1.004 1.004 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.07 22 2 13.93 2 3a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"/>
+    </svg>
+
+    <!-- Effet doré au survol -->
+    <span class="absolute inset-0 rounded-full bg-gradient-to-br from-[#c3a76b]/30 to-transparent opacity-0 group-hover:opacity-100 blur-xl transition duration-500"></span>
+  </div>
+</a>
