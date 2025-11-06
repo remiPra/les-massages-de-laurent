@@ -1,0 +1,854 @@
+---                           
+import '../styles/global.css'  
+import WhatsAppButton from './components/WhatsAppButton.astro'
+import NavBar from './components/NavBar.astro'
+--- 
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Mes Soins de Massage à Toulouse | Suédois, Californien, Drainage Lymphatique</title>
+  <meta name="description" content="Découvrez mes 4 soins de massage bien-être à Toulouse : massage suédois détente et sportif, drainage lymphatique manuel, massage californien. Tarifs, bienfaits, déroulement détaillé.">
+  <link rel="canonical" href="https://www.les-massages-de-laurent.fr/soins">
+  
+  <!-- Keywords -->
+  <meta name="keywords" content="massage suédois Toulouse, massage californien Toulouse, drainage lymphatique Toulouse, massage sportif Toulouse, massage détente, tarif massage Toulouse, soins bien-être Toulouse">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Soins de Massage - Les massages de Laurent Toulouse">
+  <meta property="og:description" content="4 types de massages adaptés à vos besoins. Suédois, californien, drainage lymphatique. 30 à 90 minutes.">
+  <meta property="og:image" content="https://www.les-massages-de-laurent.fr/salle-massage.jpg">
+  
+  <!-- Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+    body { 
+      font-family: 'Montserrat', sans-serif; 
+      background: linear-gradient(to bottom right, #fffefc, #f5f0e6);
+      color: #333; 
+    }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
+    .text-gradient { background: linear-gradient(90deg, #b48a60, #8b6b4f, #c3a76b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .gradient-btn { background: linear-gradient(135deg, #b48a60, #8b6b4f); }
+    .gradient-btn:hover { background: linear-gradient(135deg, #c3a76b, #b48a60); }
+    .card-hover { transition: all 0.4s ease; }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 25px 50px rgba(0,0,0,0.12); }
+    .tab-btn { transition: all 0.3s ease; }
+    .tab-btn.active { background: linear-gradient(135deg, #b48a60, #8b6b4f); color: white; }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <NavBar />
+
+  <!-- HERO -->
+  <section class="pt-32 pb-20 px-6 bg-gradient-to-br from-[#fff8f2] via-white to-[#f4efe9]">
+    <div class="max-w-6xl mx-auto text-center" data-aos="fade-up">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 text-gradient leading-tight">
+        Mes Soins de Massage Bien-être
+      </h1>
+      <p class="text-2xl text-gray-600 mb-4">
+        4 techniques adaptées à vos besoins • 30 à 90 minutes
+      </p>
+      <figure class="flex justify-center my-12">
+        <img src="buddha.png" alt="Massage bien-être zen relaxation" 
+          class="w-32 border-2 border-[#8b6b4f] rounded-full shadow-lg">
+      </figure>
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+        Chaque massage est une <strong>rencontre avec soi-même</strong> : détente musculaire, 
+        rééquilibrage énergétique et paix intérieure. Découvrez le soin qui vous correspond.
+      </p>
+    </div>
+  </section>
+
+  <!-- NAVIGATION RAPIDE -->
+  <section class="py-12 px-6 bg-[#f9f4ef] sticky top-0 z-40 shadow-md">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#suedois-detente" class="px-6 py-3 rounded-full bg-white text-[#8b6b4f] font-semibold hover:bg-[#8b6b4f] hover:text-white transition shadow-md">
+          Massage Suédois Détente
+        </a>
+        <a href="#suedois-sportif" class="px-6 py-3 rounded-full bg-white text-[#8b6b4f] font-semibold hover:bg-[#8b6b4f] hover:text-white transition shadow-md">
+          Suédois Sportifs
+        </a>
+        <a href="#drainage" class="px-6 py-3 rounded-full bg-white text-[#8b6b4f] font-semibold hover:bg-[#8b6b4f] hover:text-white transition shadow-md">
+          Drainage Lymphatique
+        </a>
+        <a href="#californien" class="px-6 py-3 rounded-full bg-white text-[#8b6b4f] font-semibold hover:bg-[#8b6b4f] hover:text-white transition shadow-md">
+          Massage Californien
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MASSAGE SUÉDOIS DÉTENTE -->
+  <section id="suedois-detente" class="py-24 px-6 bg-[#e8dccf]">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <!-- Image -->
+        <div data-aos="fade-right">
+          <img 
+            src="salle-massage.jpg" 
+            alt="Massage suédois détente table professionnelle" 
+            class="rounded-3xl shadow-2xl w-full"
+          >
+        </div>
+
+        <!-- Contenu -->
+        <div data-aos="fade-left">
+          <div class="inline-block bg-[#b48a60] text-white px-6 py-2 rounded-full text-sm font-semibold mb-4">
+            DÉTENTE & RELAXATION
+          </div>
+          <h2 class="text-5xl font-bold text-[#8b6b4f] mb-6">
+            Massage Détente Suédois
+          </h2>
+          <p class="text-xl text-gray-700 leading-relaxed mb-6">
+            Le <strong>massage suédois</strong> est une technique de massage profond et tonique qui favorise 
+            la détente musculaire, améliore la circulation sanguine et lymphatique, et procure une sensation 
+            de bien-être général.
+          </p>
+          
+          <!-- Tarifs -->
+          <div class="bg-white/90 rounded-2xl p-6 mb-6">
+            <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-4">Tarifs</h3>
+            <div class="space-y-3">
+              <div class="flex justify-between items-center">
+                <span class="text-lg text-gray-700">30 minutes</span>
+                <span class="text-2xl font-bold text-[#8b6b4f]">35 €</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-lg text-gray-700">45 minutes</span>
+                <span class="text-2xl font-bold text-[#8b6b4f]">42 €</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-lg text-gray-700">60 minutes</span>
+                <span class="text-2xl font-bold text-[#8b6b4f]">59 €</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="inline-block gradient-btn text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition">
+            Réserver ce massage
+          </a>
+        </div>
+      </div>
+
+      <!-- Détails approfondis -->
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Bienfaits -->
+        <div class="bg-white/90 rounded-3xl p-8 shadow-lg" data-aos="fade-up">
+          <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-6 flex items-center gap-3">
+            <span class="text-3xl">✨</span>
+            Bienfaits
+          </h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Détente musculaire profonde</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Amélioration circulation sanguine</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Réduction du stress et anxiété</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Élimination des toxines</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Meilleur sommeil</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Sensation de légèreté</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pour qui -->
+        <div class="bg-white/90 rounded-3xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-6 flex items-center gap-3">
+            <span class="text-3xl">👤</span>
+            Idéal pour
+          </h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Personnes stressées ou fatiguées</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Travailleurs sédentaires</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Tensions cervicales/dorsales</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Besoin de reconnexion</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Troubles du sommeil</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Convalescence douce</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Techniques -->
+        <div class="bg-white/90 rounded-3xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-6 flex items-center gap-3">
+            <span class="text-3xl">🙌</span>
+            Techniques
+          </h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Effleurage (mouvements longs)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Pétrissage profond</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Friction circulaire</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Tapotements toniques</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Mobilisations articulaires</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Pression glissée profonde</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MASSAGE SUÉDOIS SPORTIFS -->
+  <section id="suedois-sportif" class="py-24 px-6 bg-[#f9f4ef]">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+        
+        <!-- Contenu -->
+        <div data-aos="fade-right">
+          <div class="inline-block bg-[#b48a60] text-white px-6 py-2 rounded-full text-sm font-semibold mb-4">
+            PERFORMANCE & RÉCUPÉRATION
+          </div>
+          <h2 class="text-5xl font-bold text-[#8b6b4f] mb-6">
+            Massage Suédois pour Sportifs
+          </h2>
+          <p class="text-xl text-gray-700 leading-relaxed mb-6">
+            Soin <strong>intense et ciblé</strong> spécialement conçu pour les sportifs. Ce massage 
+            favorise la récupération musculaire, prévient les blessures et optimise la performance sportive 
+            grâce à des techniques de pétrissage profond et de mobilisation.
+          </p>
+          
+          <!-- Tarifs -->
+          <div class="bg-white/90 rounded-2xl p-6 mb-6">
+            <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-4">Tarifs</h3>
+            <div class="space-y-3">
+              <div class="flex justify-between items-center">
+                <span class="text-lg text-gray-700">30 minutes</span>
+                <span class="text-2xl font-bold text-[#8b6b4f]">35 €</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-lg text-gray-700">45 minutes</span>
+                <span class="text-2xl font-bold text-[#8b6b4f]">42 €</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-lg text-gray-700">60 minutes</span>
+                <span class="text-2xl font-bold text-[#8b6b4f]">59 €</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="inline-block gradient-btn text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition">
+            Réserver ce massage
+          </a>
+        </div>
+
+        <!-- Image -->
+        <div data-aos="fade-left">
+          <img 
+            src="coin-rangement.jpg" 
+            alt="Massage sportif récupération musculaire" 
+            class="rounded-3xl shadow-2xl w-full"
+          >
+        </div>
+      </div>
+
+      <!-- Détails approfondis -->
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Bienfaits -->
+        <div class="bg-white/90 rounded-3xl p-8 shadow-lg" data-aos="fade-up">
+          <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-6 flex items-center gap-3">
+            <span class="text-3xl">💪</span>
+            Bienfaits
+          </h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Récupération musculaire accélérée</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Réduction courbatures & crampes</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Prévention des blessures</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Amélioration souplesse</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Optimisation performance</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Évacuation acide lactique</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pour qui -->
+        <div class="bg-white/90 rounded-3xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-6 flex items-center gap-3">
+            <span class="text-3xl">🏃</span>
+            Idéal pour
+          </h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Athlètes & compétiteurs</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Runners & marathoniens</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Pratiquants fitness/musculation</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Cyclistes & triathlètes</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Préparation compétition</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Récupération post-effort</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Quand -->
+        <div class="bg-white/90 rounded-3xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-6 flex items-center gap-3">
+            <span class="text-3xl">📅</span>
+            Quand ?
+          </h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span><strong>Avant :</strong> 2-3 jours avant compétition</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span><strong>Après :</strong> 24-48h après effort intense</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span><strong>Régulier :</strong> 1-2 fois/mois en entretien</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span><strong>Blessure :</strong> En phase de rééducation</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span><strong>Préparation :</strong> En cycle d'entraînement</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DRAINAGE LYMPHATIQUE -->
+  <section id="drainage" class="py-24 px-6 bg-[#e8dccf]">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <!-- Image -->
+        <div data-aos="fade-right">
+          <img 
+            src="salle-attente-2.jpg" 
+            alt="Drainage lymphatique détente bien-être" 
+            class="rounded-3xl shadow-2xl w-full"
+          >
+        </div>
+
+        <!-- Contenu -->
+        <div data-aos="fade-left">
+          <div class="inline-block bg-[#b48a60] text-white px-6 py-2 rounded-full text-sm font-semibold mb-4">
+            DÉTOX & LÉGÈRETÉ
+          </div>
+          <h2 class="text-5xl font-bold text-[#8b6b4f] mb-6">
+            Drainage Lymphatique Manuel
+          </h2>
+          <p class="text-xl text-gray-700 leading-relaxed mb-6">
+            Le <strong>drainage lymphatique manuel</strong> est une technique douce et précise qui stimule 
+            le système lymphatique pour favoriser l'élimination des toxines, réduire la rétention d'eau 
+            et alléger les jambes lourdes. Un massage de <strong>détoxification profonde</strong>.
+          </p>
+          
+          <!-- Tarifs -->
+          <div class="bg-white/90 rounded-2xl p-6 mb-6">
+            <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-4">Tarif</h3>
+            <div class="flex justify-between items-center">
+              <span class="text-lg text-gray-700">60 minutes</span>
+              <span class="text-3xl font-bold text-[#8b6b4f]">65 €</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="inline-block gradient-btn text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition">
+            Réserver ce massage
+          </a>
+        </div>
+      </div>
+
+      <!-- Détails approfondis -->
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Bienfaits -->
+        <div class="bg-white/90 rounded-3xl p-8 shadow-lg" data-aos="fade-up">
+          <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-6 flex items-center gap-3">
+            <span class="text-3xl">💧</span>
+            Bienfaits
+          </h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Élimination toxines & déchets</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Réduction rétention d'eau</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Soulagement jambes lourdes</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Amélioration circulation</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Renforcement immunité</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Réduction cellulite & œdèmes</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pour qui -->
+        <div class="bg-white/90 rounded-3xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-6 flex items-center gap-3">
+            <span class="text-3xl">🌊</span>
+            Idéal pour
+          </h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Jambes lourdes & gonflées</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Rétention d'eau importante</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Cellulite aqueuse</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Post-opératoire (selon avis médical)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Besoin détox profonde</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Troubles circulatoires</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contre-indications -->
+        <div class="bg-white/90 rounded-3xl p-8 shadow-lg border-2 border-red-200" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-2xl font-semibold text-red-600 mb-6 flex items-center gap-3">
+            <span class="text-3xl">⚠️</span>
+            Attention
+          </h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 mt-1">✗</span>
+              <span>Infections aiguës</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 mt-1">✗</span>
+              <span>Phlébite récente</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 mt-1">✗</span>
+              <span>Cancer en traitement actif</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 mt-1">✗</span>
+              <span>Insuffisance cardiaque</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 mt-1">✗</span>
+              <span>Grossesse 1er trimestre</span>
+            </li>
+            <p class="text-sm italic mt-4 text-gray-600">
+              En cas de doute, consultez votre médecin.
+            </p>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MASSAGE CALIFORNIEN -->
+  <section id="californien" class="py-24 px-6 bg-[#f9f4ef]">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+        
+        <!-- Contenu -->
+        <div data-aos="fade-right">
+          <div class="inline-block bg-[#b48a60] text-white px-6 py-2 rounded-full text-sm font-semibold mb-4">
+            RECONNEXION & LÂCHER-PRISE
+          </div>
+          <h2 class="text-5xl font-bold text-[#8b6b4f] mb-6">
+            Massage Californien Kinesthésique
+          </h2>
+          <p class="text-xl text-gray-700 leading-relaxed mb-6">
+            Le <strong>massage californien</strong> est un soin global, enveloppant et intuitif qui relie 
+            le corps, le souffle et l'âme. Mouvements longs et fluides pour une <strong>détente profonde</strong>, 
+            un <strong>lâcher-prise total</strong> et une <strong>reconnexion à soi</strong>.
+          </p>
+          
+          <!-- Tarifs -->
+          <div class="bg-white/90 rounded-2xl p-6 mb-6">
+            <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-4">Tarifs</h3>
+            <div class="space-y-3">
+              <div class="flex justify-between items-center">
+                <span class="text-lg text-gray-700">60 minutes</span>
+                <span class="text-2xl font-bold text-[#8b6b4f]">59 €</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-lg text-gray-700">90 minutes</span>
+                <span class="text-2xl font-bold text-[#8b6b4f]">70 €</span>
+              </div>
+            </div>
+            <p class="text-sm text-gray-600 mt-3 italic">
+              ⭐ Version 90 min recommandée pour une immersion totale
+            </p>
+          </div>
+
+          <a href="#contact" class="inline-block gradient-btn text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition">
+            Réserver ce massage
+          </a>
+        </div>
+
+        <!-- Image -->
+        <div data-aos="fade-left">
+          <img 
+            src="spa-ambiance-1.jpg" 
+            alt="Massage californien reconnexion lâcher-prise" 
+            class="rounded-3xl shadow-2xl w-full"
+          >
+        </div>
+      </div>
+
+      <!-- Détails approfondis -->
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Bienfaits -->
+        <div class="bg-white/90 rounded-3xl p-8 shadow-lg" data-aos="fade-up">
+          <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-6 flex items-center gap-3">
+            <span class="text-3xl">🌟</span>
+            Bienfaits
+          </h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Lâcher-prise profond</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Reconnexion corps-esprit</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Libération émotions</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Harmonisation énergétique</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Réduction stress profond</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Sensation d'unité intérieure</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pour qui -->
+        <div class="bg-white/90 rounded-3xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-6 flex items-center gap-3">
+            <span class="text-3xl">🧘</span>
+            Idéal pour
+          </h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Stress émotionnel intense</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Besoin de reconnexion à soi</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Burn-out ou fatigue nerveuse</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Difficulté à lâcher prise</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Période de transition de vie</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Quête de paix intérieure</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Particularités -->
+        <div class="bg-white/90 rounded-3xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-6 flex items-center gap-3">
+            <span class="text-3xl">✨</span>
+            Spécificités
+          </h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Mouvements longs & enveloppants</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Toucher intuitif & présent</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Travail sur le souffle</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Massage global du corps</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Huiles chaudes parfumées</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <span>Ambiance musicale douce</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DÉROULEMENT UNIVERSEL -->
+  <section class="py-24 px-6 bg-[#e8dccf]">
+    <div class="max-w-5xl mx-auto">
+      
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-5xl font-bold text-[#8b6b4f] mb-4">Déroulement d'une Séance</h2>
+        <p class="text-xl text-gray-600">
+          Quel que soit le massage choisi, voici comment se passe votre moment de détente
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        
+        <div class="bg-white/90 rounded-3xl p-8 flex gap-6 items-start card-hover" data-aos="fade-up">
+          <div class="flex-shrink-0 w-16 h-16 bg-[#b48a60] text-white rounded-full flex items-center justify-center text-2xl font-bold">
+            1
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-3">Accueil & Échange (5-10 min)</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Je vous accueille chaleureusement. Nous prenons le temps d'échanger sur vos attentes, 
+              vos zones de tension, vos éventuelles contre-indications. Ce dialogue permet de personnaliser 
+              entièrement le massage à vos besoins du moment.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white/90 rounded-3xl p-8 flex gap-6 items-start card-hover" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex-shrink-0 w-16 h-16 bg-[#b48a60] text-white rounded-full flex items-center justify-center text-2xl font-bold">
+            2
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-3">Installation Confortable</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Vous vous installez sur la table de massage à mémoire de forme, recouverte d'une serviette douce (600g/m²). 
+              Musique apaisante, lumière tamisée, température idéale. Vous vous déshabillez selon votre confort 
+              et vous couvrez d'une serviette. Votre intimité est totalement respectée.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white/90 rounded-3xl p-8 flex gap-6 items-start card-hover" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex-shrink-0 w-16 h-16 bg-[#b48a60] text-white rounded-full flex items-center justify-center text-2xl font-bold">
+            3
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-3">Le Massage (30 à 90 min)</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Utilisant des huiles végétales bio Ecocert chauffées, je pratique le massage avec attention, 
+              bienveillance et présence. Chaque geste est adapté à votre ressenti. N'hésitez pas à communiquer 
+              si vous souhaitez ajuster la pression ou si vous ressentez une gêne.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white/90 rounded-3xl p-8 flex gap-6 items-start card-hover" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex-shrink-0 w-16 h-16 bg-[#b48a60] text-white rounded-full flex items-center justify-center text-2xl font-bold">
+            4
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-3">Retour en Douceur (10-15 min)</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Après le massage, je vous laisse quelques instants pour revenir tranquillement à vous, 
+              sans précipitation. Nous échangeons ensuite sur vos ressentis. Je peux vous donner des conseils 
+              pour prolonger les bienfaits du massage chez vous (hydratation, étirements, repos...).
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-12 bg-gradient-to-r from-[#b48a60] to-[#8b6b4f] rounded-3xl p-8 text-white text-center" data-aos="fade-up">
+        <p class="text-xl mb-2">
+          ⏰ <strong>Durée totale conseillée</strong>
+        </p>
+        <p class="text-lg">
+          Pour apprécier pleinement les bienfaits d'une séance de massage, prévoyez si possible, 
+          en plus du temps de déplacement, <strong>20-30 minutes supplémentaires</strong> à votre agenda 
+          (accueil + transition non incluses dans la prestation).
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="py-24 px-6 bg-gradient-to-br from-[#8b6b4f] to-[#b48a60]">
+    <div class="max-w-4xl mx-auto text-center text-white" data-aos="fade-up">
+      
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">
+        Prêt à Réserver Votre Massage ?
+      </h2>
+      
+      <p class="text-xl mb-10 leading-relaxed max-w-2xl mx-auto">
+        Choisissez le soin qui correspond à vos besoins et offrez-vous ce moment précieux de reconnexion.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/contact" class="bg-white text-[#8b6b4f] px-10 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition text-lg">
+          Prendre rendez-vous
+        </a>
+        <a href="/qui-suis-je" class="border-2 border-white text-white px-10 py-4 rounded-full font-semibold hover:bg-white/10 transition text-lg">
+          En savoir plus sur moi
+        </a>
+      </div>
+
+      <p class="mt-8 text-white/90 text-lg">
+        📞 Du lundi au vendredi : 14h00-19h00
+      </p>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#8b6b4f] text-white py-12 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <p class="mb-4">
+        &copy; 2025 Les massages de Laurent | Massage Bien-être Holistique Toulouse
+      </p>
+      <p>
+        <a href="/" class="hover:text-[#c3a76b] transition">Accueil</a> • 
+        <a href="/qui-suis-je" class="hover:text-[#c3a76b] transition">Qui suis-je</a> • 
+        <a href="/soins" class="hover:text-[#c3a76b] transition">Soins</a> • 
+        <a href="/contact" class="hover:text-[#c3a76b] transition">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <WhatsAppButton />
+
+</body>
+</html>
