@@ -1,0 +1,458 @@
+---                           
+import '../styles/global.css'  
+import WhatsAppButton from './components/WhatsAppButton.astro'
+import NavBar from './components/NavBar.astro'
+--- 
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="QblO4nmRU-Y-v3mBxZPkLUW2MyhH7tKjPCHIEPXNUKw" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Qui suis-je - Laurent, Masseur Bien-être à Toulouse | Philosophie & Expérience</title>
+  <meta name="description" content="Découvrez Laurent, masseur bien-être avec 33 ans d'expérience à Toulouse. Sa philosophie : reconnexion à soi, toucher conscient, détente psycho-corporelle. Cabinet bienveillant.">
+  <link rel="canonical" href="https://www.les-massages-de-laurent.fr/qui-suis-je">
+  
+  <!-- Keywords -->
+  <meta name="keywords" content="Laurent masseur Toulouse, philosophie massage bien-être, masseur expérience Toulouse, reconnexion soi massage, détente psycho-corporelle, bienveillance massage, toucher conscient">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Qui suis-je - Laurent | Masseur Bien-être Toulouse">
+  <meta property="og:description" content="33 ans d'expérience en massage bien-être. Philosophie de reconnexion, bienveillance et toucher conscient.">
+  <meta property="og:image" content="https://www.les-massages-de-laurent.fr/portrait-laurent.jpg">
+  
+  <!-- Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+    body { 
+      font-family: 'Montserrat', sans-serif; 
+      background: linear-gradient(to bottom right, #fffefc, #f5f0e6);
+      color: #333; 
+    }
+    h1, h2, h3, h4, h5, h6, span { font-family: 'Cormorant Garamond', serif; }
+    .text-gradient { background: linear-gradient(90deg, #b48a60, #8b6b4f, #c3a76b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .gradient-btn { background: linear-gradient(135deg, #b48a60, #8b6b4f); }
+    .gradient-btn:hover { background: linear-gradient(135deg, #c3a76b, #b48a60); }
+    .quote-mark { font-size: 4rem; line-height: 1; color: #b48a60; opacity: 0.3; }
+    .card-hover { transition: all 0.4s ease; }
+    .card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <NavBar />
+
+  <!-- HERO SECTION -->
+  <section class="mt-80p] pt-32 pb-20 px-6 bg-gradient-to-br from-[#fff8f2] via-white to-[#f4efe9]">
+    <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 text-gradient leading-tight">
+        Laurent, Votre Masseur Bien-être
+      </h1>
+      <p class="text-2xl text-gray-600 mb-4">
+        33 ans d'expérience • Bienveillance • Reconnexion à soi
+      </p>
+      <figure class="flex justify-center my-12">
+        <img src="logoying.png" alt="Symbole yin yang équilibre harmonie" 
+          class="w-32 border-2 border-[#8b6b4f] rounded-full shadow-lg">
+      </figure>
+    </div>
+  </section>
+
+  <!-- PORTRAIT & PARCOURS -->
+  <section class="py-24 px-6 bg-[#f9f4ef]">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="grid md:grid-cols-2 gap-16 items-center mb-24">
+        <!-- Photo Laurent -->
+        <div class="flex justify-center" data-aos="fade-right">
+          <div class="relative">
+            <img 
+              src="portrait-laurent.jpg" 
+              alt="Laurent - Masseur bien-être à Toulouse" 
+              class="rounded-[3rem] w-full max-w-[450px] shadow-2xl border-4 border-white"
+            >
+            <div class="absolute -bottom-6 -right-6 bg-[#8b6b4f] text-white rounded-3xl p-6 shadow-xl">
+              <p class="text-4xl font-bold">33</p>
+              <p class="text-sm">ans d'expérience</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mon Parcours -->
+        <div data-aos="fade-left">
+          <h2 class="text-5xl font-bold text-[#8b6b4f] mb-8">Mon Parcours</h2>
+          
+          <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+            <p>
+              <strong>Masseur kinésithérapeute</strong>, en exercice libéral durant <strong>33 ans</strong>, 
+              enrichi par cette longue expérience dans la pratique de différents massages, que j'ai très souvent 
+              associés aux techniques de rééducation.
+            </p>
+            
+            <p>
+              Aujourd'hui, je vous propose plusieurs soins axés sur le <strong>bien-être et la détente psycho-corporelle</strong>. 
+              Chaque massage est une invitation à la reconnexion avec soi-même, un moment suspendu où le corps 
+              et l'esprit se retrouvent.
+            </p>
+            
+            <p>
+              Mon cabinet, <strong>entièrement rénové et pensé à cet effet</strong>, vous accueille dans une 
+              <strong>ambiance paisible et confortable</strong>, propice au lâcher-prise et à la détente profonde.
+            </p>
+          </div>
+
+          <!-- Valeurs clés -->
+          <div class="grid grid-cols-2 gap-4 mt-10">
+            <div class="bg-white/80 rounded-2xl p-6 text-center border border-[#e9e2d9]">
+              <span class="text-4xl mb-2 block">🙏</span>
+              <p class="font-semibold text-[#8b6b4f]">Bienveillance</p>
+            </div>
+            <div class="bg-white/80 rounded-2xl p-6 text-center border border-[#e9e2d9]">
+              <span class="text-4xl mb-2 block">🌿</span>
+              <p class="font-semibold text-[#8b6b4f]">Écoute</p>
+            </div>
+            <div class="bg-white/80 rounded-2xl p-6 text-center border border-[#e9e2d9]">
+              <span class="text-4xl mb-2 block">✨</span>
+              <p class="font-semibold text-[#8b6b4f]">Reconnexion</p>
+            </div>
+            <div class="bg-white/80 rounded-2xl p-6 text-center border border-[#e9e2d9]">
+              <span class="text-4xl mb-2 block">💫</span>
+              <p class="font-semibold text-[#8b6b4f]">Expertise</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PHILOSOPHIE - SECTION PROFONDE -->
+  <section class="py-24 px-6 bg-[#e8dccf]">
+    <div class="max-w-5xl mx-auto">
+      
+      <!-- Header -->
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-5xl md:text-6xl font-bold text-[#8b6b4f] mb-6">
+          Ma Philosophie du Massage Bien-être
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-[#b48a60] to-[#8b6b4f] mx-auto rounded-full"></div>
+      </div>
+
+      <!-- Citation d'ouverture -->
+      <div class="bg-white/90 rounded-3xl p-12 shadow-xl mb-16 relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+        <span class="quote-mark absolute -top-6 -left-2">"</span>
+        <p class="text-2xl md:text-3xl text-center text-[#8b6b4f] italic font-serif leading-relaxed relative z-10">
+          Accordez-vous le temps de prendre soin de vous-même et en confiance retrouvez l'unité naturelle 
+          de l'enveloppe corporelle, le plaisir d'être tout simplement.
+        </p>
+        <span class="quote-mark absolute -bottom-16 -right-2 rotate-180">"</span>
+      </div>
+
+      <!-- L'enveloppe physique -->
+      <div class="mb-16" data-aos="fade-up">
+        <div class="bg-white/90 rounded-3xl p-10 shadow-lg">
+          <div class="flex items-start gap-4 mb-6">
+            <div class="flex-shrink-0 w-16 h-16 bg-[#b48a60] rounded-full flex items-center justify-center text-white text-2xl font-bold">
+              1
+            </div>
+            <div>
+              <h3 class="text-3xl font-bold text-[#8b6b4f] mb-4">L'Enveloppe Physique</h3>
+              <p class="text-lg text-gray-700 leading-relaxed">
+                Notre <strong>enveloppe physique</strong>, véhicule d'expérience de la relation au monde, à l'autre, et à soi, 
+                habitation en mouvement perpétuel interne et externe, a besoin d'<strong>unité, d'apaisement, 
+                de toucher attentif et conscient</strong> pour son équilibre, sa santé.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- La Peau -->
+      <div class="mb-16" data-aos="fade-up" data-aos-delay="100">
+        <div class="bg-white/90 rounded-3xl p-10 shadow-lg">
+          <div class="flex items-start gap-4 mb-6">
+            <div class="flex-shrink-0 w-16 h-16 bg-[#b48a60] rounded-full flex items-center justify-center text-white text-2xl font-bold">
+              2
+            </div>
+            <div>
+              <h3 class="text-3xl font-bold text-[#8b6b4f] mb-4">La Peau : Notre Premier Organe</h3>
+              <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Elle est avant tout habillée et protégée par <strong>1 m² de peau</strong>, plus grand organe du corps, 
+                en relation externe par ses multiples capteurs et également son aspect réflexe interne en relation 
+                aux organes et au système nerveux.
+              </p>
+              <p class="text-lg text-gray-700 leading-relaxed">
+                La peau a la <strong>même origine embryologique</strong> que le système nerveux : toucher la peau, 
+                c'est toucher l'âme. C'est pourquoi le massage va bien au-delà du simple contact physique.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- L'Ambiance -->
+      <div class="mb-16" data-aos="fade-up" data-aos-delay="200">
+        <div class="bg-white/90 rounded-3xl p-10 shadow-lg">
+          <div class="flex items-start gap-4 mb-6">
+            <div class="flex-shrink-0 w-16 h-16 bg-[#b48a60] rounded-full flex items-center justify-center text-white text-2xl font-bold">
+              3
+            </div>
+            <div>
+              <h3 class="text-3xl font-bold text-[#8b6b4f] mb-4">L'Ambiance Bienveillante</h3>
+              <p class="text-lg text-gray-700 leading-relaxed">
+                L'<strong>ambiance accueillante, neutre, bienveillante</strong> facilite la reconnexion à vous-même, 
+                la détente profonde, la redécouverte d'un autre vous-même par les soins attentifs du massage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Les Bénéfices -->
+      <div data-aos="fade-up" data-aos-delay="300">
+        <div class="bg-gradient-to-br from-[#8b6b4f] to-[#b48a60] rounded-3xl p-10 shadow-2xl text-white">
+          <h3 class="text-3xl font-bold mb-6 text-center">Ce Que Vous Retrouverez</h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="text-center">
+              <span class="text-5xl mb-3 block">🕊️</span>
+              <h4 class="text-xl font-semibold mb-2">Lâcher-prise</h4>
+              <p class="text-white/90">Abandon des tensions et du mental</p>
+            </div>
+            <div class="text-center">
+              <span class="text-5xl mb-3 block">🌊</span>
+              <h4 class="text-xl font-semibold mb-2">Relaxation Profonde</h4>
+              <p class="text-white/90">Détente du corps et de l'esprit</p>
+            </div>
+            <div class="text-center">
+              <span class="text-5xl mb-3 block">✨</span>
+              <h4 class="text-xl font-semibold mb-2">Reconnexion</h4>
+              <p class="text-white/90">Retour à l'unité avec soi-même</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- POURQUOI ME CHOISIR -->
+  <section class="py-24 px-6 bg-[#f9f4ef]">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-5xl font-bold text-[#8b6b4f] mb-4">Pourquoi Choisir Mes Massages ?</h2>
+        <p class="text-xl text-gray-600">
+          Une approche unique alliant expérience, bienveillance et toucher conscient
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Expérience -->
+        <div class="bg-white/90 rounded-3xl p-8 shadow-lg card-hover" data-aos="fade-up">
+          <div class="text-center mb-6">
+            <div class="w-20 h-20 bg-[#f4efe9] rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-4xl">🎓</span>
+            </div>
+            <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-3">33 Ans d'Expérience</h3>
+          </div>
+          <p class="text-gray-700 leading-relaxed text-center">
+            Plus de trois décennies de pratique en massage kinésithérapeutique et bien-être. 
+            Une expertise rare qui garantit des soins professionnels et sécurisés.
+          </p>
+        </div>
+
+        <!-- Écoute -->
+        <div class="bg-white/90 rounded-3xl p-8 shadow-lg card-hover" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-center mb-6">
+            <div class="w-20 h-20 bg-[#f4efe9] rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-4xl">👂</span>
+            </div>
+            <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-3">Écoute Attentive</h3>
+          </div>
+          <p class="text-gray-700 leading-relaxed text-center">
+            Chaque séance commence par un temps d'échange pour comprendre vos besoins, 
+            vos attentes et adapter le massage à votre état du moment.
+          </p>
+        </div>
+
+        <!-- Toucher conscient -->
+        <div class="bg-white/90 rounded-3xl p-8 shadow-lg card-hover" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-center mb-6">
+            <div class="w-20 h-20 bg-[#f4efe9] rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-4xl">🙏</span>
+            </div>
+            <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-3">Toucher Conscient</h3>
+          </div>
+          <p class="text-gray-700 leading-relaxed text-center">
+            Un toucher bienveillant, attentif et présent qui respecte votre intimité 
+            et facilite la reconnexion profonde avec votre corps.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MON APPROCHE -->
+  <section class="py-24 px-6 bg-[#e8dccf]">
+    <div class="max-w-5xl mx-auto">
+      
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-5xl font-bold text-[#8b6b4f] mb-4">Mon Approche du Massage</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <!-- Personnalisation -->
+        <div class="bg-white/90 rounded-3xl p-10 shadow-lg" data-aos="fade-up">
+          <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-4 flex items-center gap-3">
+            <span class="text-3xl">🎯</span>
+            Personnalisé
+          </h3>
+          <p class="text-gray-700 leading-relaxed">
+            Chaque personne est unique. Je n'applique pas de protocole figé mais j'adapte 
+            le massage à votre morphologie, vos tensions, vos besoins et votre sensibilité du moment.
+          </p>
+        </div>
+
+        <!-- Holistique -->
+        <div class="bg-white/90 rounded-3xl p-10 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-4 flex items-center gap-3">
+            <span class="text-3xl">☯️</span>
+            Holistique
+          </h3>
+          <p class="text-gray-700 leading-relaxed">
+            Je prends en compte la globalité de votre être : corps physique, émotions, 
+            énergie et mental. Le massage agit sur tous ces plans simultanément.
+          </p>
+        </div>
+
+        <!-- Respectueux -->
+        <div class="bg-white/90 rounded-3xl p-10 shadow-lg" data-aos="fade-up">
+          <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-4 flex items-center gap-3">
+            <span class="text-3xl">🛡️</span>
+            Respectueux
+          </h3>
+          <p class="text-gray-700 leading-relaxed">
+            Votre confort et votre pudeur sont primordiaux. Vous restez toujours couvert 
+            par une serviette douce, et seule la zone massée est découverte. Vous gardez le contrôle.
+          </p>
+        </div>
+
+        <!-- Professionnel -->
+        <div class="bg-white/90 rounded-3xl p-10 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-4 flex items-center gap-3">
+            <span class="text-3xl">💼</span>
+            Professionnel
+          </h3>
+          <p class="text-gray-700 leading-relaxed">
+            Cabinet aux normes, matériel haut de gamme, produits bio certifiés, 
+            hygiène irréprochable. Vous êtes entre de bonnes mains.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE AMBIANCE -->
+  <section class="py-24 px-6 bg-[#f9f4ef]">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-5xl font-bold text-[#8b6b4f] mb-4">L'Ambiance du Cabinet</h2>
+        <p class="text-xl text-gray-600">
+          Un espace pensé pour votre bien-être et votre sérénité
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <div class="rounded-3xl overflow-hidden shadow-lg" data-aos="fade-up">
+          <img 
+            src="panneau-relax.jpg" 
+            alt="Décoration zen massage bien-être" 
+            class="w-full h-[300px] object-cover"
+          >
+        </div>
+
+        <div class="rounded-3xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="100">
+          <img 
+            src="spa-ambiance-1.jpg" 
+            alt="Ambiance spa détente" 
+            class="w-full h-[300px] object-cover"
+          >
+        </div>
+
+        <div class="rounded-3xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="200">
+          <img 
+            src="lotus-decoration.jpg" 
+            alt="Lotus zen relaxation" 
+            class="w-full h-[300px] object-cover"
+          >
+        </div>
+
+      </div>
+
+      <div class="text-center mt-12" data-aos="fade-up">
+        <a href="/le-cabinet" class="inline-block gradient-btn text-white px-10 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition text-lg">
+          Découvrir le cabinet en détail
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="py-24 px-6 bg-gradient-to-br from-[#8b6b4f] to-[#b48a60]">
+    <div class="max-w-4xl mx-auto text-center text-white" data-aos="fade-up">
+      
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">
+        Prêt à Vous Reconnecter à Vous-même ?
+      </h2>
+      
+      <p class="text-xl mb-10 leading-relaxed max-w-2xl mx-auto">
+        Accordez-vous ce moment précieux. Un massage est bien plus qu'un soin : 
+        c'est un rendez-vous avec soi, une pause dans le tumulte du quotidien.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/contact" class="bg-white text-[#8b6b4f] px-10 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition text-lg">
+          Prendre rendez-vous
+        </a>
+        <a href="/tarifs" class="border-2 border-white text-white px-10 py-4 rounded-full font-semibold hover:bg-white/10 transition text-lg">
+          Voir les tarifs
+        </a>
+      </div>
+
+      <p class="mt-8 text-white/80">
+        📞 Du lundi au vendredi : 14h00-19h00
+      </p>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#8b6b4f] text-white py-12 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <p class="mb-4">
+        &copy; 2025 Les massages de Laurent | Massage Bien-être Holistique Toulouse
+      </p>
+      <p>
+        <a href="/" class="hover:text-[#c3a76b] transition">Accueil</a> • 
+        <a href="/qui-suis-je" class="hover:text-[#c3a76b] transition">Qui suis-je</a> • 
+        <a href="/soins" class="hover:text-[#c3a76b] transition">Soins</a> • 
+        <a href="/contact" class="hover:text-[#c3a76b] transition">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <WhatsAppButton />
+
+</body>
+</html>
