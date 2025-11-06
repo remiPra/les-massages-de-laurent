@@ -1,0 +1,22 @@
+
+# Autoriser tous les bots de recherche
+User-agent: *
+Allow: /
+
+# Interdire l'accès aux fichiers système et dossiers privés
+Disallow: /api/
+Disallow: /_astro/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# Sitemap
+Sitemap: https://www.les-massages-de-laurent.fr/sitemap.xml
+
+# Bots spécifiques
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /

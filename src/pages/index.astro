@@ -2,6 +2,7 @@
 import '../styles/global.css'  
 import WhatsAppButton from './components/WhatsAppButton.astro'
 import NavBar from './components/NavBar.astro'
+import PhoneButton from './components/PhoneButton.astro'
 --- 
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
@@ -86,7 +87,7 @@ import NavBar from './components/NavBar.astro'
         <a href="#soins" class="gradient-btn text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition">
           Découvrir les soins
         </a>
-        <a href="#contact" class="border-2 border-[#b48a60] text-[#8b6b4f] px-8 py-4 rounded-full font-semibold hover:bg-[#b48a60]/10 transition">
+        <a href="/contact" class="border-2 border-[#b48a60] text-[#8b6b4f] px-8 py-4 rounded-full font-semibold hover:bg-[#b48a60]/10 transition">
           Prendre rendez-vous
         </a>
       </div>
@@ -190,7 +191,7 @@ import NavBar from './components/NavBar.astro'
           </div>
         </div>
 
-        <a href="#contact" class="inline-block gradient-btn text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition">
+        <a href="/contact" class="inline-block gradient-btn text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition">
           Prendre rendez-vous
         </a>
       </div>
@@ -347,7 +348,7 @@ import NavBar from './components/NavBar.astro'
           <p class="font-semibold text-[#8b6b4f]">45 mn : 42 €</p>
           <p class="font-semibold text-[#8b6b4f]">60 mn : 59 €</p>
         </div>
-        <a href="#contact" class="block text-center px-6 py-3 rounded-full text-white font-semibold shadow-md transition hover:scale-105" style="background: linear-gradient(135deg, #b48a60, #8b6b4f);">
+        <a href="/contact" class="block text-center px-6 py-3 rounded-full text-white font-semibold shadow-md transition hover:scale-105" style="background: linear-gradient(135deg, #b48a60, #8b6b4f);">
           Réserver ce soin
         </a>
       </div>
@@ -363,7 +364,7 @@ import NavBar from './components/NavBar.astro'
           <p class="font-semibold text-[#8b6b4f]">45 mn : 42 €</p>
           <p class="font-semibold text-[#8b6b4f]">60 mn : 59 €</p>
         </div>
-        <a href="#contact" class="block text-center px-6 py-3 rounded-full text-white font-semibold shadow-md transition hover:scale-105" style="background: linear-gradient(135deg, #b48a60, #8b6b4f);">
+        <a href="/contact" class="block text-center px-6 py-3 rounded-full text-white font-semibold shadow-md transition hover:scale-105" style="background: linear-gradient(135deg, #b48a60, #8b6b4f);">
           Réserver ce soin
         </a>
       </div>
@@ -375,7 +376,7 @@ import NavBar from './components/NavBar.astro'
           Soin doux pour stimuler le système lymphatique et alléger le corps.
         </p>
         <p class="font-semibold text-[#8b6b4f] mb-8">60 mn : 65 €</p>
-        <a href="#contact" class="block text-center px-6 py-3 rounded-full text-white font-semibold shadow-md transition hover:scale-105" style="background: linear-gradient(135deg, #b48a60, #8b6b4f);">
+        <a href="/contact" class="block text-center px-6 py-3 rounded-full text-white font-semibold shadow-md transition hover:scale-105" style="background: linear-gradient(135deg, #b48a60, #8b6b4f);">
           Réserver ce soin
         </a>
       </div>
@@ -390,7 +391,7 @@ import NavBar from './components/NavBar.astro'
           <p class="font-semibold text-[#8b6b4f]">60 mn : 59 €</p>
           <p class="font-semibold text-[#8b6b4f]">1h30 : 70 €</p>
         </div>
-        <a href="#contact" class="block text-center px-6 py-3 rounded-full text-white font-semibold shadow-md transition hover:scale-105" style="background: linear-gradient(135deg, #b48a60, #8b6b4f);">
+        <a href="/contact" class="block text-center px-6 py-3 rounded-full text-white font-semibold shadow-md transition hover:scale-105" style="background: linear-gradient(135deg, #b48a60, #8b6b4f);">
           Réserver ce soin
         </a>
       </div>
@@ -539,7 +540,7 @@ import NavBar from './components/NavBar.astro'
     </div>
 
     <WhatsAppButton />
-
+<PhoneButton/>
     <div class="max-w-4xl mx-auto bg-white p-10 rounded-3xl shadow-xl" data-aos="fade-up">
       <form 
         action="/api/send-email" 
@@ -619,7 +620,7 @@ import NavBar from './components/NavBar.astro'
           <li><a href="#soins" class="hover:text-white transition">Mes Soins</a></li>
           <li><a href="#produits" class="hover:text-white transition">Produits</a></li>
           <li><a href="#partenaires" class="hover:text-white transition">Partenaires</a></li>
-          <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+          <li><a href="/contact" class="hover:text-white transition">Contact</a></li>
         </ul>
       </div>
       
