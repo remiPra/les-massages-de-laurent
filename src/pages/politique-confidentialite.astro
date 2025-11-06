@@ -1,0 +1,382 @@
+---                           
+import '../styles/global.css'  
+import WhatsAppButton from './components/WhatsAppButton.astro'
+import NavBar from './components/NavBar.astro'
+--- 
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Politique de Confidentialité | Les Massages de Laurent</title>
+  <meta name="description" content="Politique de confidentialité et protection des données personnelles du site Les Massages de Laurent. Conformité RGPD.">
+  <link rel="canonical" href="https://www.les-massages-de-laurent.fr/politique-confidentialite">
+  <meta name="robots" content="noindex, follow">
+  
+  <!-- Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+    body { 
+      font-family: 'Montserrat', sans-serif; 
+      background: linear-gradient(to bottom right, #fffefc, #f5f0e6);
+      color: #333; 
+    }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
+    .text-gradient { background: linear-gradient(90deg, #b48a60, #8b6b4f, #c3a76b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <NavBar />
+
+  <!-- HERO -->
+  <section class="pt-32 pb-12 px-6 bg-gradient-to-br from-[#fff8f2] via-white to-[#f4efe9]">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4 text-gradient leading-tight">
+        Politique de Confidentialité
+      </h1>
+      <p class="text-lg text-gray-600">
+        Protection de vos données personnelles - Conformité RGPD
+      </p>
+      <p class="text-sm text-gray-500 mt-4">
+        Dernière mise à jour : Janvier 2025
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTENU -->
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-4xl mx-auto">
+      
+      <div class="prose prose-lg max-w-none">
+        
+        <!-- Introduction -->
+        <div class="mb-12 bg-[#f9f4ef] rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-[#8b6b4f] mb-6">Introduction</h2>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            La présente politique de confidentialité a pour but de vous informer sur la manière dont 
+            <strong>Les Massages de Laurent</strong> collecte, utilise et protège vos données personnelles 
+            lorsque vous utilisez notre site web <strong>www.les-massages-de-laurent.fr</strong>.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Nous nous engageons à protéger votre vie privée et à respecter le Règlement Général sur la Protection 
+            des Données (RGPD) en vigueur depuis le 25 mai 2018.
+          </p>
+        </div>
+
+        <!-- Responsable du traitement -->
+        <div class="mb-12 bg-[#f9f4ef] rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-[#8b6b4f] mb-6">1. Responsable du traitement des données</h2>
+          <p class="text-gray-700 leading-relaxed mb-3">
+            Le responsable du traitement de vos données personnelles est :
+          </p>
+          <ul class="space-y-2 text-gray-700">
+            <li><strong>Nom :</strong> Laurent [NOM DE FAMILLE]</li>
+            <li><strong>Adresse :</strong> 148 Rue Du Faubourg Bonnefoy, 31500 Toulouse</li>
+            <li><strong>Email :</strong> <a href="mailto:contact@les-massages-de-laurent.fr" class="text-[#b48a60] hover:underline">contact@les-massages-de-laurent.fr</a></li>
+            <li><strong>Téléphone :</strong> <a href="tel:+33660224080" class="text-[#b48a60] hover:underline">06 60 22 40 80</a></li>
+          </ul>
+        </div>
+
+        <!-- Données collectées -->
+        <div class="mb-12 bg-[#f9f4ef] rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-[#8b6b4f] mb-6">2. Données personnelles collectées</h2>
+          
+          <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-4 mt-6">2.1 Via le formulaire de contact</h3>
+          <p class="text-gray-700 leading-relaxed mb-3">
+            Lorsque vous remplissez le formulaire de demande de rendez-vous, nous collectons les données suivantes :
+          </p>
+          <ul class="space-y-2 text-gray-700 list-disc ml-6">
+            <li>Prénom et nom</li>
+            <li>Adresse email</li>
+            <li>Numéro de téléphone (optionnel)</li>
+            <li>Message et informations liées à votre demande</li>
+          </ul>
+
+          <h3 class="text-2xl font-semibold text-[#8b6b4f] mb-4 mt-8">2.2 Données de navigation</h3>
+          <p class="text-gray-700 leading-relaxed mb-3">
+            Lors de votre visite sur notre site, nous collectons automatiquement certaines informations techniques :
+          </p>
+          <ul class="space-y-2 text-gray-700 list-disc ml-6">
+            <li>Adresse IP</li>
+            <li>Type de navigateur</li>
+            <li>Pages visitées et durée de visite</li>
+            <li>Système d'exploitation</li>
+            <li>Source de trafic (comment vous êtes arrivé sur le site)</li>
+          </ul>
+        </div>
+
+        <!-- Finalités -->
+        <div class="mb-12 bg-[#f9f4ef] rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-[#8b6b4f] mb-6">3. Finalités du traitement</h2>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Les données personnelles collectées sont utilisées pour les finalités suivantes :
+          </p>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <div>
+                <strong>Gestion des demandes de rendez-vous :</strong> traiter votre demande et vous recontacter 
+                pour confirmer ou proposer un rendez-vous.
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <div>
+                <strong>Communication :</strong> vous envoyer des informations relatives à votre rendez-vous 
+                (confirmation, rappel, modification).
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <div>
+                <strong>Amélioration du service :</strong> analyser l'utilisation du site pour améliorer 
+                l'expérience utilisateur et nos services.
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#b48a60] mt-1">•</span>
+              <div>
+                <strong>Respect des obligations légales :</strong> conformité avec les réglementations en vigueur.
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Base légale -->
+        <div class="mb-12 bg-[#f9f4ef] rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-[#8b6b4f] mb-6">4. Base légale du traitement</h2>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Le traitement de vos données personnelles repose sur les bases légales suivantes :
+          </p>
+          <ul class="space-y-2 text-gray-700 list-disc ml-6">
+            <li><strong>Consentement :</strong> vous acceptez la collecte de vos données en remplissant le formulaire de contact.</li>
+            <li><strong>Exécution d'un contrat :</strong> traitement nécessaire pour la gestion de votre rendez-vous.</li>
+            <li><strong>Intérêt légitime :</strong> amélioration de nos services et analyse statistique du site.</li>
+          </ul>
+        </div>
+
+        <!-- Destinataires -->
+        <div class="mb-12 bg-[#f9f4ef] rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-[#8b6b4f] mb-6">5. Destinataires des données</h2>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Vos données personnelles sont destinées uniquement à <strong>Laurent</strong> et ne sont en aucun cas 
+            vendues, louées ou transmises à des tiers à des fins commerciales.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Nous pouvons être amenés à partager certaines données avec nos prestataires techniques 
+            (hébergement web, service d'emailing) dans le strict respect des exigences du RGPD et sous contrat 
+            de confidentialité.
+          </p>
+        </div>
+
+        <!-- Durée de conservation -->
+        <div class="mb-12 bg-[#f9f4ef] rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-[#8b6b4f] mb-6">6. Durée de conservation des données</h2>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Vos données personnelles sont conservées pour les durées suivantes :
+          </p>
+          <ul class="space-y-2 text-gray-700 list-disc ml-6">
+            <li><strong>Données de contact :</strong> 3 ans à compter de votre dernier contact ou rendez-vous.</li>
+            <li><strong>Données de navigation :</strong> 13 mois maximum (durée légale des cookies).</li>
+            <li><strong>Données comptables :</strong> 10 ans conformément aux obligations légales.</li>
+          </ul>
+          <p class="text-gray-700 leading-relaxed mt-4">
+            Au-delà de ces durées, vos données sont supprimées ou anonymisées.
+          </p>
+        </div>
+
+        <!-- Droits -->
+        <div class="mb-12 bg-[#f9f4ef] rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-[#8b6b4f] mb-6">7. Vos droits</h2>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Conformément au RGPD, vous disposez des droits suivants concernant vos données personnelles :
+          </p>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <span class="text-[#b48a60] mt-1">✓</span>
+              <div><strong>Droit d'accès :</strong> obtenir la confirmation que vos données sont traitées et y accéder.</div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#b48a60] mt-1">✓</span>
+              <div><strong>Droit de rectification :</strong> corriger vos données inexactes ou incomplètes.</div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#b48a60] mt-1">✓</span>
+              <div><strong>Droit à l'effacement :</strong> demander la suppression de vos données ("droit à l'oubli").</div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#b48a60] mt-1">✓</span>
+              <div><strong>Droit à la limitation :</strong> limiter le traitement de vos données dans certains cas.</div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#b48a60] mt-1">✓</span>
+              <div><strong>Droit d'opposition :</strong> vous opposer au traitement de vos données pour des raisons légitimes.</div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#b48a60] mt-1">✓</span>
+              <div><strong>Droit à la portabilité :</strong> recevoir vos données dans un format structuré et lisible.</div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-[#b48a60] mt-1">✓</span>
+              <div><strong>Droit de retirer votre consentement :</strong> à tout moment, sans affecter la licéité du traitement antérieur.</div>
+            </li>
+          </ul>
+
+          <div class="mt-6 p-6 bg-white rounded-xl border-2 border-[#b48a60]">
+            <h3 class="text-xl font-semibold text-[#8b6b4f] mb-3">Comment exercer vos droits ?</h3>
+            <p class="text-gray-700 leading-relaxed mb-3">
+              Pour exercer vos droits, vous pouvez nous contacter :
+            </p>
+            <ul class="space-y-2 text-gray-700">
+              <li>📧 <strong>Par email :</strong> <a href="mailto:contact@les-massages-de-laurent.fr" class="text-[#b48a60] hover:underline">contact@les-massages-de-laurent.fr</a></li>
+              <li>📞 <strong>Par téléphone :</strong> <a href="tel:+33660224080" class="text-[#b48a60] hover:underline">06 60 22 40 80</a></li>
+              <li>✉️ <strong>Par courrier :</strong> 148 Rue Du Faubourg Bonnefoy, 31500 Toulouse</li>
+            </ul>
+            <p class="text-sm text-gray-600 italic mt-4">
+              Merci de joindre une copie de votre pièce d'identité pour justifier de votre identité.
+            </p>
+          </div>
+        </div>
+
+        <!-- Sécurité -->
+        <div class="mb-12 bg-[#f9f4ef] rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-[#8b6b4f] mb-6">8. Sécurité des données</h2>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Nous mettons en œuvre toutes les mesures techniques et organisationnelles appropriées pour protéger 
+            vos données personnelles contre toute perte, utilisation abusive, accès non autorisé, divulgation, 
+            altération ou destruction.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Ces mesures incluent notamment : chiffrement SSL, sauvegardes régulières, accès restreint aux données, 
+            et hébergement sécurisé chez un prestataire certifié.
+          </p>
+        </div>
+
+        <!-- Cookies -->
+        <div class="mb-12 bg-[#f9f4ef] rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-[#8b6b4f] mb-6">9. Cookies</h2>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Notre site utilise des cookies pour améliorer votre expérience de navigation et analyser le trafic.
+          </p>
+          
+          <h3 class="text-xl font-semibold text-[#8b6b4f] mb-3 mt-6">Types de cookies utilisés :</h3>
+          <ul class="space-y-2 text-gray-700 list-disc ml-6 mb-4">
+            <li><strong>Cookies strictement nécessaires :</strong> essentiels au fonctionnement du site.</li>
+            <li><strong>Cookies analytiques :</strong> nous aident à comprendre comment vous utilisez le site (Google Analytics, si applicable).</li>
+          </ul>
+
+          <p class="text-gray-700 leading-relaxed">
+            Vous pouvez à tout moment désactiver les cookies via les paramètres de votre navigateur. 
+            Cependant, cela peut affecter certaines fonctionnalités du site.
+          </p>
+        </div>
+
+        <!-- Modifications -->
+        <div class="mb-12 bg-[#f9f4ef] rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-[#8b6b4f] mb-6">10. Modifications de la politique</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. 
+            Toute modification sera publiée sur cette page avec une date de mise à jour. Nous vous encourageons 
+            à consulter régulièrement cette page pour rester informé.
+          </p>
+        </div>
+
+        <!-- Réclamation CNIL -->
+        <div class="mb-12 bg-[#f9f4ef] rounded-2xl p-8">
+          <h2 class="text-3xl font-bold text-[#8b6b4f] mb-6">11. Réclamation auprès de la CNIL</h2>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Si vous estimez que vos droits ne sont pas respectés, vous avez le droit d'introduire une réclamation 
+            auprès de la Commission Nationale de l'Informatique et des Libertés (CNIL) :
+          </p>
+          <ul class="space-y-2 text-gray-700">
+            <li><strong>Site web :</strong> <a href="https://www.cnil.fr" target="_blank" class="text-[#b48a60] hover:underline">www.cnil.fr</a></li>
+            <li><strong>Adresse :</strong> 3 Place de Fontenoy, TSA 80715, 75334 Paris Cedex 07</li>
+            <li><strong>Téléphone :</strong> 01 53 73 22 22</li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="bg-gradient-to-r from-[#b48a60] to-[#8b6b4f] rounded-2xl p-8 text-white text-center">
+          <h2 class="text-3xl font-bold mb-4">Questions sur vos données personnelles ?</h2>
+          <p class="text-lg mb-6">
+            Pour toute question relative à la protection de vos données, contactez-nous :
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="tel:+33660224080" class="inline-block bg-white text-[#8b6b4f] px-8 py-3 rounded-full font-semibold hover:bg-[#f4efe9] transition">
+              📞 06 60 22 40 80
+            </a>
+            <a href="mailto:contact@les-massages-de-laurent.fr" class="inline-block bg-white text-[#8b6b4f] px-8 py-3 rounded-full font-semibold hover:bg-[#f4efe9] transition">
+              ✉️ Nous écrire
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#8b6b4f] text-white py-12 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-2xl font-bold mb-3">Les massages de Laurent</h3>
+        <p class="text-[#f4ede5] leading-relaxed mb-4">
+          Cabinet de massage bien-être holistique à Toulouse
+        </p>
+        <p class="text-[#f4ede5]">
+          148 Rue Du Faubourg Bonnefoy<br>
+          31500 Toulouse
+        </p>
+      </div>
+      
+      <div>
+        <h4 class="text-lg font-bold mb-3">Navigation</h4>
+        <ul class="space-y-2 text-[#f4ede5]">
+          <li><a href="/" class="hover:text-white transition">Accueil</a></li>
+          <li><a href="/qui-suis-je" class="hover:text-white transition">Qui suis-je</a></li>
+          <li><a href="/soins" class="hover:text-white transition">Soins</a></li>
+          <li><a href="/contact" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="text-lg font-bold mb-3">Contact</h4>
+        <p class="text-[#f4ede5] mb-2">
+          📞 <a href="tel:+33660224080" class="hover:text-white transition">06 60 22 40 80</a>
+        </p>
+        <p class="text-[#f4ede5] mb-4">
+          <strong>Horaires :</strong><br>
+          Du lundi au vendredi<br>
+          14h00 – 19h00
+        </p>
+        <a 
+          href="https://wa.me/33660224080" 
+          target="_blank"
+          class="inline-block bg-[#25D366] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#128C7E] transition text-sm"
+        >
+          💬 WhatsApp
+        </a>
+      </div>
+    </div>
+    
+    <div class="border-t border-[#a6896c] mt-8 pt-6 text-center text-[#e8ddd2] text-sm">
+      <p class="mb-4">
+        &copy; 2025 Les massages de Laurent | Massage Bien-être Holistique Toulouse
+      </p>
+      <p>
+        <a href="/mentions-legales" class="hover:text-white transition">Mentions légales</a> – 
+        <a href="/politique-confidentialite" class="hover:text-white transition font-semibold">Politique de confidentialité</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <WhatsAppButton />
+
+</body>
+</html>
