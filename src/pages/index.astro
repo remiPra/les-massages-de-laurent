@@ -15,6 +15,9 @@ import NavBar from './components/NavBar.astro'
   <meta name="description" content="Cabinet de massage bien-être à Toulouse. Laurent propose massage suédois, californien, drainage lymphatique. 33 ans d'expérience. Massages holistiques pour reconnexion à soi et détente profonde. Cabinet rénové, ambiance zen.">
   <link rel="canonical" href="https://www.les-massages-de-laurent.fr">
   
+
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#d4af37">
   <!-- Keywords - MASSAGE BIEN-ÊTRE -->
   <meta name="keywords" content="massage bien-être Toulouse, massage holistique Toulouse, massage détente Toulouse, massage californien Toulouse, massage suédois Toulouse, drainage lymphatique Toulouse, massage relaxation, détente psycho-corporelle, reconnexion soi, lâcher prise, massage sportif, cabinet massage Toulouse, soin bien-être Toulouse">
   
@@ -641,7 +644,13 @@ import NavBar from './components/NavBar.astro'
         <a href="#" class="hover:text-white transition">Mentions légales</a> – 
         <a href="#" class="hover:text-white transition">Politique de confidentialité</a>
       </p>
-      <figure class="flex justify-center">
+      <div id="install-container" class="mt-6 flex justify-center">
+        <button id="installBtn" 
+          class="hidden bg-[#d4af37] text-black font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-[#f7da83] transition text-lg">
+          📲 Installer l’application
+        </button>
+      </div>
+      <figure class="mt-10 flex justify-center">
         <img src="qrcode.png" alt="QR Code contact Les massages de Laurent" class="w-32 h-32 rounded-lg shadow-md">  
       </figure>  
     </div>
@@ -696,5 +705,33 @@ import NavBar from './components/NavBar.astro'
     "url": "https://www.les-massages-de-laurent.fr"
   }
   </script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js');
+  }
+
+  let deferredPrompt;
+  const installBtn = document.getElementById('installBtn');
+  const installContainer = document.getElementById('install-container');
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    installBtn.classList.remove('hidden'); // montre le bouton dans le footer
+  });
+
+  installBtn.addEventListener('click', async () => {
+    installBtn.disabled = true;
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    if (outcome === 'accepted') {
+      installContainer.innerHTML = '<p class="text-[#d4af37] font-semibold mt-3">✅ Application installée avec succès !</p>';
+    } else {
+      installBtn.disabled = false;
+    }
+    deferredPrompt = null;
+  });
+</script>
 </body>
 </html>
